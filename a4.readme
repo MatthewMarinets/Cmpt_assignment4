@@ -13,3 +13,5 @@ The algorithm is to:
 -Each iteration is O(log(n))
 -The worst case is that all elements in list1 are also in list 2.
 --Checking this is O(nlog(n)); n elements in list1 * each one requires a log(n) search in list2.
+
+No external libraries are used outside of the C++ standard libraries.

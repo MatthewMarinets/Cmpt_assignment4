@@ -72,7 +72,7 @@ int main() {
     if (retval) {
         cout << retval << endl;
     } else {
-        cout << "NONE" << endl;
+        cout << "None" << endl;
     }
 
     return 0;
