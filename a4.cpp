@@ -53,6 +53,8 @@ int main() {
         }
     }
 
+    input.close();
+
     // repeatedly take the max element of list1, and return it if it is not in list 2.
     int retval;
     while (true) {
