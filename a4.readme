@@ -1,0 +1,15 @@
+student number: 301311930
+login: mmarinet
+name: Matthew Marinets
+
+My approach was to store the first list in a max heap, and the second in a std::set
+(according to the C++ reference, std::set is usually implemented as a red-black tree).
+
+The algorithm is to:
+1) take the max element of list1 (O(1), since list1 is a max heap)
+2) check that this element isn't in list2 (Searching list2 is O(log(n)), as list2 is a set)
+3) if the element is not in list2, return it. Else, pop it off the heap (O(log(n))), and return to step 1
+
+-Each iteration is O(log(n))
+-The worst case is that all elements in list1 are also in list 2.
+--Checking this is O(nlog(n)); n elements in list1 * each one requires a log(n) search in list2.
