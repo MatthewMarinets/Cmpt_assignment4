@@ -26,6 +26,7 @@ int main() {
 
     // get input file name
     std::string inputFileName;
+    cout << "Please type the input file name." << endl;
     cin >> inputFileName;
 
     // declare collections to hold the two lists

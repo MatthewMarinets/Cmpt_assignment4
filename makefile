@@ -1,7 +1,7 @@
 
 CFLAGS=-g -Wall -Werror -Iinclude
 CC=g++
-EXECUTABLE_NAME=a4.exe
+EXECUTABLE_NAME=a4
 
 SOURCES:=$(wildcard *.cpp)
 HEADERS:=$(wildcard include/*.h)
@@ -21,4 +21,4 @@ $(OBJDIR)/%.o: %.cpp $(HEADERS)
 
 clean:
 	rm -f $(OBJDIR)/*.o $(EXECUTABLE_NAME)
-	rmdir $(OBJDIR)
+	rm -r $(OBJDIR)
